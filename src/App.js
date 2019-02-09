@@ -37,7 +37,7 @@ class Line extends Component {
                 .domain([0, d3.max(dataset, (d) => d[1])])
                 .range([h - padding, padding]);
 
-      const svg = d3.select("body")
+      const svg = d3.select(faux)
               .append("svg")
               .attr("width", w)
               .attr("height", h);
