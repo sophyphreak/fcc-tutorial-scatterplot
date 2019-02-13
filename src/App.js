@@ -58,7 +58,7 @@ class Line extends Component {
       .data(dataset)
       .enter()
       .append('text')
-      .text(d => d[0] + ',' + d[1])
+      .text(d => `(${d[0]}, ${d[1]})`)
       .attr('x', d => xScale(d[0] + 10))
       .attr('y', d => yScale(d[1]));
 
